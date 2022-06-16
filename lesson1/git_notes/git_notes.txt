@@ -1,0 +1,28 @@
+Snapshots not differences.
+
+delta-based version control.
+
+https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
+
+
+3 States in Git:
+------
+Modified - changed, but not added/removed to be commited on next commit
+
+Staged - Added/removed, will be included in the next commit
+
+Committed
+
+Sort of 4th state - Unknown, not known by Git.
+
+
+Working Dir -> Staging -> .Git folder
+
+git config --global init.defaultBranch main
+
+
+Tracked or untracked state of file.
+
+git status
+
+
