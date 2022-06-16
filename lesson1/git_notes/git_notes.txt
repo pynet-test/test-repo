@@ -25,4 +25,8 @@ Tracked or untracked state of file.
 
 git status
 
+git diff --staged
 
+Adding the -a option to the git commit command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the git add part:
+
+git commit -a -m 'Add new benchmarks'
