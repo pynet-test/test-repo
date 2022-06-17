@@ -30,3 +30,120 @@ git diff --staged
 Adding the -a option to the git commit command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the git add part:
 
 git commit -a -m 'Add new benchmarks'
+
+
+Show the last two changes (the 'diff' of these two changes)
+
+git log -p -2
+
+
+git log --stat  (cool/nice way to see a summarized view of changes in the 'git log')
+
+A bunch of way to undo things.
+
+
+Remotes
+-----
+git remote
+git remote -v
+
+Adding new remotes
+Removing remotes
+
+What the fuck are remotes.
+
+
+Push/Pull/Fetch
+-----
+Differences
+
+
+Tags
+------
+
+
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+
+fast-forward
+
+
+Deleting branches
+
+
+
+merge conflicts
+
+
+Git branch workflows
+
+tracking branches
+
+
+
+GIT TOC
+
+1. GIT fundamentals.
+    A. What is GIT?
+        i. Distributed VCS
+    B. How does GIT fundamentally operate
+        i. Sequence of snapshots of files and the directories they are contained in.
+        ii. The snapshot is a commit object - who made the change, when, who commited the change, when.
+    C. Getting started with Git in Linux
+        i. git init test2-repo
+            
+-----
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+----
+
+ git add
+ git commit
+ git remote add
+ git push -u origin main
+
+
+    D. Getting started in GitHub.
+        1. Create an account.
+        2. Create a new repository
+            a. Two screenshots
+            b. Show new repository
+
+        3. Setting up your access Token in GH
+            a. Series of screenshots
+            b. Possible this workflow might change in GH across time.
+
+        4. git clone into your Linux Environment
+
+    E. When you 'git clone' into your Linux Environment.
+
+        1. Git will automatically copy the repository.
+
+        2. Git will automatically add a remote named 'origin'
+
+        3. Git will automatically create the 'default' GitHub branch for that repository AND create a link between that branch and the remote branch of the same name `develop -> origin/develop`
+
+        4. The clone contains all the branches and all of the files throughout all of the commits (i.e. every snapshot of your files that you have ever created).
+
+    F. Setting up your environment post `git clone`
+
+-----
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+-----
+   
+
+2. GIT Adding Files
+
+    A. git add
+        1. Add a single file
+        2. Add multiple files with globbing
+        3. Adding directories (recursive)
+
+    B. Fundamental distinction between `tracked and untracked` files
+
+    C. Once in the `tracked state`, then their are multiple states that the file can undergo inside of GIT
+
+        committed - the file / set of files / directories are fully in Git (the snapshot is complete at this point int time)
+
+        
+
